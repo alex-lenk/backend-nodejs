@@ -1,0 +1,20 @@
+{
+  "name": "note-app",
+  "version": "1.0.3",
+  "description": "This is simple NodeJS Application",
+  "main": "index.js",
+  "scripts": {
+    "list": "node index list"
+  },
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "author": "AlexLenk <al@alexlenk.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/yargs": "^17.0.24",
+    "chalk": "^4.1.2",
+    "yargs": "^17.7.1"
+  }
+}
