@@ -8,7 +8,7 @@ async function addNote(title) {
   const notes = await getNotes()
   const note = {
     title,
-    id: Date.now().toString()
+    id: Date.now().toString(),
   }
 
   notes.push(note)
@@ -45,6 +45,16 @@ async function printNotes() {
   })
 }
 
+async function editNote({id, title}) {
+  const notes = await getNotes()
+  notes[notes.findIndex((item) => item.id === id)].title = title
+  await saveNotes(notes)
+  console.log(chalk.bgRed('Title was update'), title)
+}
+
 module.exports = {
-  addNote, getNotes, removeNote
+  addNote,
+  removeNote,
+  getNotes,
+  editNote,
 }
