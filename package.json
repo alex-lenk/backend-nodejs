@@ -1,6 +1,6 @@
 {
   "name": "note-app",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This is simple NodeJS Application",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "AlexLenk <al@alexlenk.ru>",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.2.0",
+    "chalk": "^4.1.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "yargs": "^17.7.1"
